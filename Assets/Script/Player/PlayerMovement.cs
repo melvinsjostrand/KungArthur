@@ -1,3 +1,4 @@
+//Script skriven av Hibba
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -33,8 +34,8 @@ public class PlayerMovement : MonoBehaviour {
     }
 
    void FixedUpdate() {
-        float verticalPlayerInput = Input.GetAxisRaw(axisName: "Vertical");             // Gets vertical input.
-        float horizontalPlayerInput = Input.GetAxisRaw(axisName: "Horizontal");         // Gets horizontal input.
+        float verticalPlayerInput = Input.GetAxisRaw(axisName: "Vertical");             // Hämtar vertical input.
+        float horizontalPlayerInput = Input.GetAxisRaw(axisName: "Horizontal");         // Hämtar horizontal input.
 
         Vector3 forward = transform.InverseTransformVector (vector: Camera.main.transform.forward);
         Vector3 right = transform.InverseTransformVector (vector: Camera.main.transform.right);
@@ -46,8 +47,8 @@ public class PlayerMovement : MonoBehaviour {
         right = right.normalized;
 
         float speed = this.speed;
-        Vector3 forwardRelativeVerticalInput = verticalPlayerInput * forward * Time.fixedDeltaTime;         // Fixes relative movment for vertical movment.
-        Vector3 rightRelativeHorizontalInput = horizontalPlayerInput * right * Time.fixedDeltaTime;         // Fixes relative movment for horizontal movment.
+        Vector3 forwardRelativeVerticalInput = verticalPlayerInput * forward * Time.fixedDeltaTime;         // Fixar movement för vertical movement.
+        Vector3 rightRelativeHorizontalInput = horizontalPlayerInput * right * Time.fixedDeltaTime;         // Fixar movement för horizontal movement.
 
         Vector3 cameraRelativeMovement = forwardRelativeVerticalInput + rightRelativeHorizontalInput;
         if(Input.GetKey(key: KeyCode.LeftShift)) { // Sprinting.

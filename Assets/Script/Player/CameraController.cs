@@ -1,3 +1,4 @@
+//skriven av Hibba med hjälp av Kevin
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,8 +8,8 @@ public class CameraController : MonoBehaviour {
 
     public float clampAngle = 20.0f;
 
-    private float yAxisRot = 0.0f;      // rotation around the up/y axis
-    private float xAxisRot = 0.0f;      // rotation around the right/x axis
+    private float yAxisRot = 0.0f;      // rotation för up/y axis
+    private float xAxisRot = 0.0f;      // rotation för right/x axis
 
     private float turnSpeed = 5.0f;
 
