@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadOptionMenu : MonoBehaviour
+public class LoadSettingMenu : MonoBehaviour
 {
    public void LoadOption(){
-    SceneManager.LoadScene("OptionMenu");
+    SceneManager.LoadScene("SettingMenu");
 }
 }
