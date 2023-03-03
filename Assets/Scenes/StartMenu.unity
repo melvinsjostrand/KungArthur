@@ -192,8 +192,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278249971
-  m_fontColor: {r: 0.9528302, g: 0.9131504, b: 0, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -210,10 +210,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 62.65
+  m_fontSize: 50
   m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 16
@@ -321,11 +321,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.10849059, g: 0.16470589, b: 1, a: 0.5529412}
-    m_HighlightedColor: {r: 0.10980392, g: 0.16470589, b: 1, a: 0.3137255}
-    m_PressedColor: {r: 0.10980392, g: 0.16470589, b: 1, a: 0.4627451}
-    m_SelectedColor: {r: 0.10980392, g: 0.16470589, b: 1, a: 0.5176471}
-    m_DisabledColor: {r: 0.10980392, g: 0.16470589, b: 1, a: 0.64705884}
+    m_NormalColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 0.5529412}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.3137255}
+    m_PressedColor: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 0.4627451}
+    m_SelectedColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 0.5176471}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 0.64705884}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -463,8 +463,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278249971
-  m_fontColor: {r: 0.9528302, g: 0.9131504, b: 0, a: 1}
+    rgba: 4278193164
+  m_fontColor: {r: 0.047169805, g: 0.04522866, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -481,10 +481,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 62.65
+  m_fontSize: 50
   m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 16
@@ -694,11 +694,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.10849059, g: 0.16470589, b: 1, a: 0.5529412}
-    m_HighlightedColor: {r: 0.10980392, g: 0.16470589, b: 1, a: 0.3137255}
-    m_PressedColor: {r: 0.10980392, g: 0.16470589, b: 1, a: 0.4627451}
-    m_SelectedColor: {r: 0.10980392, g: 0.16470589, b: 1, a: 0.5176471}
-    m_DisabledColor: {r: 0.10980392, g: 0.16470589, b: 1, a: 0.64705884}
+    m_NormalColor: {r: 0.97557855, g: 0.97592103, b: 0.9811321, a: 0.5529412}
+    m_HighlightedColor: {r: 0.92046994, g: 0.92246574, b: 0.9528302, a: 0.3137255}
+    m_PressedColor: {r: 0.96619797, g: 0.9665372, b: 0.9716981, a: 0.4627451}
+    m_SelectedColor: {r: 0.96619797, g: 0.9665372, b: 0.9716981, a: 0.5176471}
+    m_DisabledColor: {r: 0.9474368, g: 0.94776946, b: 0.9528302, a: 0.64705884}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -793,7 +793,7 @@ GameObject:
   - component: {fileID: 1020514408}
   - component: {fileID: 1020514411}
   m_Layer: 5
-  m_Name: OptionlButton
+  m_Name: SettingButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -841,11 +841,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.10980392, g: 0.16470589, b: 1, a: 0.5686275}
-    m_HighlightedColor: {r: 0.10980392, g: 0.16470589, b: 1, a: 0.3137255}
-    m_PressedColor: {r: 0.10980392, g: 0.16470589, b: 1, a: 0.4627451}
-    m_SelectedColor: {r: 0.10980392, g: 0.16470589, b: 1, a: 0.5176471}
-    m_DisabledColor: {r: 0.10980392, g: 0.16470589, b: 1, a: 0.64705884}
+    m_NormalColor: {r: 0.9622642, g: 0.9622642, b: 0.9622642, a: 0.5686275}
+    m_HighlightedColor: {r: 0.96632254, g: 0.9672359, b: 0.9811321, a: 0.3137255}
+    m_PressedColor: {r: 0.96619797, g: 0.9665372, b: 0.9716981, a: 0.4627451}
+    m_SelectedColor: {r: 0.96632254, g: 0.9672359, b: 0.9811321, a: 0.5176471}
+    m_DisabledColor: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 0.64705884}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1066,7 +1066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.32146668, g: 0.36497062, b: 0.990566, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1111,7 +1111,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 1
-  m_CellSize: {x: 300, y: 70}
+  m_CellSize: {x: 250, y: 70}
   m_Spacing: {x: 0, y: 20}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -1142,7 +1142,7 @@ RectTransform:
   m_GameObject: {fileID: 1514317923}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1346419724}
@@ -1328,8 +1328,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278249971
-  m_fontColor: {r: 0.9528302, g: 0.9131504, b: 0, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1346,10 +1346,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 62.65
+  m_fontSize: 50
   m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 16
