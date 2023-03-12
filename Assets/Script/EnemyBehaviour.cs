@@ -26,5 +26,22 @@ public class EnemyBehaviour : MonoBehaviour
         //kontrollera sikt och attackräckvidd
         playerInSightRange = Physics.CheckSphere(transform.position,sightRange,whatIsPlayer);
         playerInAttackRange=  Physics.CheckSphere(transform.position,attackRange,whatIsPlayer);
+
+        if(!playerInSightRange && !playerInAttackRange) Patroling();//fienden kommer att patrullera om det inte finns någon spelare inom sikte och attackräckvidd
+        if(playerInSightRange && !playerInAttackRange) ChasePlayer(); // fienden kommer att jaga spelaren om de är i sikte
+        if(playerInAttackRange && playerInAttackRange) AttackPlayer();// fienden kommer att attackera om spelaren är inom sikte och attackräckvidd
     }
+    private void Patroling()
+    {
+
+    }
+    private void ChasePlayer()
+    {
+
+    }
+    private void AttackPlayer()
+    {
+
+    }
+
 }
