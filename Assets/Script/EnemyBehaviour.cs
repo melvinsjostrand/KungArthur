@@ -51,11 +51,21 @@ public class EnemyBehaviour : MonoBehaviour
     }
     private void ChasePlayer()
     {
-
+      agent.SetDestination(player.position);
     }
     private void AttackPlayer()
     {
-
+      agent.SetDestination(transform.position);
+      transform.LookAt(player);
+      if(!alreadyAttacked)
+      {
+        alreadyAttacked = true;
+        Invoke(nameof(ResetAttack),timeBetweenAttack);
+      }
+    }
+    private void ResetAttack()
+    {
+      alreadyAttacked=false;
     }
 
 }
