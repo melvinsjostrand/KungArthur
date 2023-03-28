@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SettingMenu.unity
     guid: cd6e4b0eb530ce647a3baa0ad7cae23b
+  - enabled: 1
+    path: "Assets/Scenes/Terr\xE4ng.unity"
+    guid: 28a49e64e9a991341a4c948765431aee
   m_configObjects: {}
