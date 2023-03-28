@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour {
     }  
 
     void Update() {                                                     // Jump
-        if(Input.GetKeyDown(KeyCode.Space) && rb.velocity.y == 0) {
+        if(Input.GetKeyDown(KeyCode.Space) && rb.velocity.y <= 0 && rb.velocity.y >= -0.001) {
             rb.AddForce(Vector3.up * jumpHeight, ForceMode.Impulse);
         }
     }
@@ -64,6 +64,7 @@ public class PlayerMovement : MonoBehaviour {
         else{
             col.height = Mathf.Min(1.8f, col.height + Time.deltaTime*10f);
         }
+        //if(velChange < 0.1)
 
         transform.Translate(translation: cameraRelativeMovement * speed, relativeTo: Space.World);
     }
