@@ -12,12 +12,18 @@ public class PlayerMovement : MonoBehaviour {
     public float speed = 4f;
     public float sprintSpeed = 9f;
 
-    public float jumpHeight = 1;
+    public float jumpHeight = 2;
     public float gravityScale = 10;
     public float fallingGravityScale = 40;
 
     private float vertical;
     private float horizontal;
+
+    private float cayoteTime = 0.2f;
+    private float cayoteTimeCounter;
+
+    private float jumpBufferTime = 0.2f;
+    private float jumpBufferCounter;
 
     private void Awake() {
         camera.fieldOfView = 80;   
@@ -27,9 +33,38 @@ public class PlayerMovement : MonoBehaviour {
         rb = GetComponent<Rigidbody>(); 
     }  
 
-    void Update() {                                                     // Jump
-        if(Input.GetKeyDown(KeyCode.Space) && rb.velocity.y <= 0 && rb.velocity.y >= -0.001) {
+    void Update() 
+    {                               // Jump
+        if (rb.velocity.y <= 0 && rb.velocity.y >= -0.001)
+        {
+            cayoteTimeCounter = cayoteTime;
+        }
+        else
+        {
+            cayoteTimeCounter -= Time.deltaTime;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            jumpBufferCounter = jumpBufferTime;
+        }
+        else
+        {
+            jumpBufferCounter -= Time.deltaTime;
+        }
+                                             
+        if (jumpBufferCounter > 0f && cayoteTimeCounter > 0f) 
+        {
             rb.AddForce(Vector3.up * jumpHeight, ForceMode.Impulse);
+
+            jumpBufferCounter = 0f;
+        }
+
+        if(Input.GetKeyUp(KeyCode.Space) && rb.velocity.y > 0f)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+
+            cayoteTimeCounter = 0f;
         }
     }
 
@@ -67,5 +102,6 @@ public class PlayerMovement : MonoBehaviour {
         //if(velChange < 0.1)
 
         transform.Translate(translation: cameraRelativeMovement * speed, relativeTo: Space.World);
+        //rb.AddForce();
     }
 }

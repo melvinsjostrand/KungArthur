@@ -868,6 +868,14 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 112
       objectReference: {fileID: 0}
+    - target: {fileID: 4035747990713087957, guid: 05ba1ccd57a69024b91465be1283af8b, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4035747990713087957, guid: 05ba1ccd57a69024b91465be1283af8b, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4035747990713087963, guid: 05ba1ccd57a69024b91465be1283af8b, type: 3}
       propertyPath: m_Name
       value: Player
