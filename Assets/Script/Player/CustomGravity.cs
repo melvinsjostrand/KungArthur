@@ -1,4 +1,4 @@
-//Skriven av Hibba med hjälp av kevin
+//skriven av hibba
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
