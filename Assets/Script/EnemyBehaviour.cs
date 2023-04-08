@@ -58,7 +58,9 @@ public class EnemyBehaviour : MonoBehaviour
       agent.SetDestination(transform.position);
       transform.LookAt(player);
       if(!alreadyAttacked)
-      {
+      { //Attack animation
+
+        //Attack animation
         alreadyAttacked = true;
         Invoke(nameof(ResetAttack),timeBetweenAttack);
       }
