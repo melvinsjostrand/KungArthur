@@ -6,7 +6,7 @@ using UnityEngine.Rendering.PostProcessing;
 public class HP : MonoBehaviour
 {
     private PostProcessVolume volume;
-    public Vignette vignette;
+    private Vignette vignette;
     public int maxHP = 100;
     public int currentHP;
 
@@ -24,12 +24,12 @@ public class HP : MonoBehaviour
         FloatParameter f = new FloatParameter();
         if (currentHP <= 40)
         {
-            f.value = 0.5f;
+            f.value = 0.4f;
             vignette.intensity = f;
         }
         else
         {
-            f.value = 0;
+            f.value = 0f;
             vignette.intensity = f;
         }
     }
