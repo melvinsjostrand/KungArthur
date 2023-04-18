@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Terr\xE4ng.unity"
     guid: 28a49e64e9a991341a4c948765431aee
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: abddd64c84ae7fd4c85a2bf619184d29
+  - enabled: 1
+    path: Assets/Scenes/audio.unity
+    guid: 900059d5e9f24f44fa7f731f9d6e06a4
+  - enabled: 1
+    path: Assets/Scenes/controls.unity
+    guid: 9503f1b57058f004a84906f4b4083f62
   m_configObjects: {}
