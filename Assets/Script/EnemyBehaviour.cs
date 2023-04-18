@@ -59,7 +59,7 @@ public class EnemyBehaviour : MonoBehaviour
       transform.LookAt(player);
       if(!alreadyAttacked)
       { //Attack animation
-
+            
         //Attack animation
         alreadyAttacked = true;
         Invoke(nameof(ResetAttack),timeBetweenAttack);
