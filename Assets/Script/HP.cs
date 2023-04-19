@@ -11,6 +11,7 @@ public class HP : MonoBehaviour
     public int maxHP = 100;
     public int currentHP;
     public bool alive;
+    public string causeOfDeath;
     
 
     // Start is called before the first frame update
@@ -73,12 +74,14 @@ public class HP : MonoBehaviour
 
         if (alive == false)
         {
-            print("Du dog");
+            print(causeOfDeath);
+
         }
 
-        void TakeDamage(int damage)
+    }
+
+    public void TakeDamage(int damage)
         {
             currentHP -= damage;
         }
-    }
 }
