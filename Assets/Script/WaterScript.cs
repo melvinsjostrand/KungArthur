@@ -6,7 +6,6 @@ public class WaterScript : MonoBehaviour
 {
 
     public HP hp;
-    public string drunknade = "Du drunknade =(";
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +27,7 @@ public class WaterScript : MonoBehaviour
             if (healthComponent != null)
             {
                 healthComponent.TakeDamage(100);
-                hp.causeOfDeath = drunknade;
+                hp.causeOfDeath = "Du drunknade =(";
             }
         }
     }

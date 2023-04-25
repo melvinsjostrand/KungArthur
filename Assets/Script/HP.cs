@@ -74,7 +74,7 @@ public class HP : MonoBehaviour
 
         if (alive == false)
         {
-            print(causeOfDeath);
+            //print(causeOfDeath);
 
         }
 
