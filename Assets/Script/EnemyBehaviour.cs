@@ -15,10 +15,12 @@ public class EnemyBehaviour : MonoBehaviour
     //attackera
     public float timeBetweenAttack;
     bool alreadyAttacked;
+    public GameObject projectilePrefab;
+    public float projectileSpeed;
     //range
     public float sightRange,attackRange;
     public bool playerInSightRange, playerInAttackRange;
-    private void awake(){
+    private void Awake(){
       player = GameObject.Find("Player").transform;
     }
     private void Update()
@@ -58,9 +60,11 @@ public class EnemyBehaviour : MonoBehaviour
       agent.SetDestination(transform.position);
       transform.LookAt(player);
       if(!alreadyAttacked)
-      { //Attack animation
-            
-        //Attack animation
+      { 
+    GameObject projectileObject = Instantiate(projectilePrefab, transform.position + transform.forward, Quaternion.identity);
+    Projectile projectile = projectileObject.GetComponent<Projectile>();
+    projectile.Launch(player.position - transform.position, projectileSpeed);
+        
         alreadyAttacked = true;
         Invoke(nameof(ResetAttack),timeBetweenAttack);
       }
