@@ -4,6 +4,18 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-   public GameObject arrow;
-   public float timeBetweenShooting, spread,reloadTime, timeBetweenShots;
+  private Rigidbody rb;
+
+    private void Awake() {
+        rb = GetComponent<Rigidbody>();
+    }
+
+    public void Launch(Vector3 direction, float speed) {
+        rb.velocity = direction.normalized * speed;
+    }
+
+    private void OnCollisionEnter(Collision collision) {
+        // Destroy the projectile on collision with another object
+        Destroy(gameObject);
+    }
 }
