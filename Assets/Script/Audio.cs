@@ -5,8 +5,7 @@ using UnityEngine;
 public class Audio : MonoBehaviour
 {
     public AudioSource AudioSource;
-
-    private float musicVolume = 100f;
+    private float Volume = 100f;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,12 +13,8 @@ public class Audio : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        AudioSource.volume = musicVolume;
-    }
 
     public void updateVolume(float volume){
-        musicVolume = volume;
+        Volume = volume;
     }
 }
