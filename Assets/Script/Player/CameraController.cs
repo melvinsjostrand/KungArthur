@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour {
+    public DiedScript ds;
     public float mouseSensitivity = 30.0f;
 
     public float clampAngle = 20.0f;
@@ -40,5 +41,14 @@ public class CameraController : MonoBehaviour {
         
         Quaternion localRotation = Quaternion.Euler(x: xAxisRot, y: yAxisRot, z: 0.0f);
         transform.rotation = localRotation;
+
+        if(ds.canMove == false)
+        {
+            this.GetComponent<CameraController>().enabled = false;
+        }
+        else
+        {
+            this.GetComponent<CameraController>().enabled = true;
+        }
     }
 }

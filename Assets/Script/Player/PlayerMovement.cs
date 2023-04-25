@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour {
     private Rigidbody rb;
     public Camera camera;
     public CapsuleCollider col;
+    public DiedScript ds;
 
     public float speed = 4f;
     public float sprintSpeed = 9f;
@@ -29,6 +30,15 @@ public class PlayerMovement : MonoBehaviour {
     void Update() {                                                     // Jump
         if(Input.GetKeyDown(KeyCode.Space) && rb.velocity.y == 0) {
             rb.AddForce(Vector3.up * jumpHeight, ForceMode.Impulse);
+        }
+
+        if(ds.canMove == false)
+        {
+            this.GetComponent<PlayerMovement>().enabled = false;
+        }
+        else
+        {
+            this.GetComponent<PlayerMovement>().enabled = true;
         }
     }
 
