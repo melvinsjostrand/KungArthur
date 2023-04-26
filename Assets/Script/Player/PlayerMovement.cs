@@ -36,10 +36,6 @@ public class PlayerMovement : MonoBehaviour {
         {
             this.GetComponent<PlayerMovement>().enabled = false;
         }
-        else
-        {
-            this.GetComponent<PlayerMovement>().enabled = true;
-        }
     }
 
    void FixedUpdate() {

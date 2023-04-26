@@ -46,9 +46,5 @@ public class CameraController : MonoBehaviour {
         {
             this.GetComponent<CameraController>().enabled = false;
         }
-        else
-        {
-            this.GetComponent<CameraController>().enabled = true;
-        }
     }
 }

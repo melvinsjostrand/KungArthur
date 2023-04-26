@@ -14,6 +14,7 @@ public class DiedScript : MonoBehaviour
 
     public bool canMove;
     public GameObject player;
+    public GameObject mc;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class DiedScript : MonoBehaviour
         canMove = true;
         respawnButton.SetActive(false);
         causeOfDeathText.gameObject.SetActive(false);
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
@@ -34,12 +36,15 @@ public class DiedScript : MonoBehaviour
             canMove = false;
             respawnButton.SetActive(true);
             causeOfDeathText.gameObject.SetActive(true);
+            Cursor.visible = true;
         }
         else
         {
             darkScreen.SetActive(false);
             canMove = true;
             causeOfDeathText.gameObject.SetActive(false);
+            respawnButton.SetActive(false);
+            Cursor.visible = false;
         }
     }
 
@@ -49,6 +54,8 @@ public class DiedScript : MonoBehaviour
         respawnButton.SetActive(false);
         causeOfDeathText.gameObject.SetActive(false);
         hp.currentHP = hp.maxHP;
-        transform.position = spawnPoint.position;
+        player.transform.position = spawnPoint.position;
+        player.GetComponent<PlayerMovement>().enabled = true;
+        mc.GetComponent<CameraController>().enabled = true;
     }
 }
