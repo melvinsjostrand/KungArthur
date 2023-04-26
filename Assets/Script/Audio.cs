@@ -15,7 +15,7 @@ public class Audio : MonoBehaviour
     void Start()
     {
         ObjectMusic = GameObject.FindWithTag("GameMusic");
-        AudioSource = ObjectMusic.GetComponent<AudioSource>();
+        AudioSource = GameObject.FindWithTag("GameMusic").GetComponent<AudioSource>();
 
         Volume = PlayerPrefs.GetFloat("volume");
 
@@ -26,7 +26,8 @@ public class Audio : MonoBehaviour
     // Update is called once per frame
     private void Update() 
         {
-            AudioSource.volume = Volume;
+            float v = volumeSlider.value;
+            AudioSource.volume = v;
             PlayerPrefs.SetFloat("volume", Volume);
         }
     
