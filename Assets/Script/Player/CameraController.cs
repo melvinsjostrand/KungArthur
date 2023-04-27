@@ -15,6 +15,7 @@ public class CameraController : MonoBehaviour {
     public Transform target;
 
     public float targetDistance = 2.5f;
+    public DiedScript ds;
 
     void Start () {
         Vector3 rot = transform.localRotation.eulerAngles;

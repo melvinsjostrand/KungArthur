@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour {
     private float vertical;
     private float horizontal;
 
+    public DiedScript ds;
+
     private void Awake() {
         camera.fieldOfView = 80;   
     }
