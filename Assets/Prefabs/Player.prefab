@@ -199,8 +199,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 0.67388016
+  m_Height: 2.229498
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &4035747990713087957
@@ -231,7 +231,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f93e6f2f69f23124da59ff9cac1823b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transform: {fileID: 4035747990713087953}
   camera: {fileID: 4035747989784809887}
   col: {fileID: 4035747990713087958}
   speed: 4
