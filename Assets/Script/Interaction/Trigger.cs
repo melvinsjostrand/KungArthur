@@ -10,12 +10,17 @@ public class Trigger : MonoBehaviour
     private bool istriggeringnpc; //npc
     public TMP_Text npcText;
     public GameObject QuestMenu;
+    public DialogueSystem DS;
+    public bool DActive; //kollar om player pratar med npc och sätter denna true så att dialogsystemet kan funka
+    void Start(){
+        DActive = false;
+    }
     void Update()
     {
-        if(istriggeringnpc){ //npc dialog
-            if(Input.GetKeyDown(KeyCode.E)){
-                QuestMenu.SetActive(true);
-            }
+        if((istriggeringnpc) && (Input.GetKeyDown(KeyCode.E))){ //npc dialog
+                DS.gameObject.SetActive(true);
+                DS.Active();
+                npcText.gameObject.SetActive(false);
         }
     }
     void OnTriggerEnter(Collider other) {
@@ -28,9 +33,13 @@ public class Trigger : MonoBehaviour
             Quest1.Points();
             Destroy(other.gameObject);
         }
+        if (other.tag == "PickupItem")
+        {
+            Quest3.Item();
+            Destroy(other.gameObject);
+        }
     }
     void OnTriggerExit(Collider other) {
-        npcText.text = "Press E to talk";
         npcText.gameObject.SetActive(false);
         QuestMenu.SetActive(false);
         istriggeringnpc = false;

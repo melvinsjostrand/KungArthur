@@ -1,4 +1,3 @@
-//skriven av hibba
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,7 +6,6 @@ public class PlayerMovement : MonoBehaviour {
     private Rigidbody rb;
     public Camera camera;
     public CapsuleCollider col;
-    public DiedScript ds;
 
     public float speed = 4f;
     public float sprintSpeed = 9f;

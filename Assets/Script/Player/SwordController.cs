@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour {
+public class SwordController : MonoBehaviour {
     public float mouseSensitivity = 30.0f;
 
     public float clampAngle = 20.0f;
@@ -33,16 +33,11 @@ public class CameraController : MonoBehaviour {
         xAxisRot = Mathf.Clamp(value: xAxisRot, min: -clampAngle, max: clampAngle * 3);
 
         Vector3 newPos =target.transform.position - (transform.forward * targetDistance);
-        newPos.y += 0.67f; //fixar så att kameran inte är i mitten av Player
-
+        newPos.y += 0.18f;
+        newPos.y = transform.position.y;
         transform.position = newPos;
         
-        Quaternion localRotation = Quaternion.Euler(x: xAxisRot, y: yAxisRot, z: 0.0f);
+        Quaternion localRotation = Quaternion.Euler(x: 0, y: yAxisRot, z: 0.0f);
         transform.rotation = localRotation;
-
-        if(ds.canMove == false)
-        {
-            this.GetComponent<CameraController>().enabled = false;
-        }
     }
 }
