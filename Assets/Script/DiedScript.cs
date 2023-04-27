@@ -37,6 +37,7 @@ public class DiedScript : MonoBehaviour
             respawnButton.SetActive(true);
             causeOfDeathText.gameObject.SetActive(true);
             Cursor.visible = true;
+            GameObject.FindWithTag("GameMusic").GetComponent<AudioSource>().Pause();
         }
         else
         {
@@ -45,6 +46,7 @@ public class DiedScript : MonoBehaviour
             causeOfDeathText.gameObject.SetActive(false);
             respawnButton.SetActive(false);
             Cursor.visible = false;
+            GameObject.FindWithTag("GameMusic").GetComponent<AudioSource>().UnPause();
         }
     }
 

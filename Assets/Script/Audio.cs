@@ -18,8 +18,8 @@ public class Audio : MonoBehaviour
         AudioSource = GameObject.FindWithTag("GameMusic").GetComponent<AudioSource>();
 
         Volume = PlayerPrefs.GetFloat("volume");
-
-        AudioSource.volume = Volume;
+        Volume = AudioSource.volume;
+        //AudioSource.volume = Volume;
         volumeSlider.value = Volume;
     }
 
