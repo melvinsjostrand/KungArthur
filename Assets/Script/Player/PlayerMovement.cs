@@ -17,6 +17,13 @@ public class PlayerMovement : MonoBehaviour {
     private float vertical;
     private float horizontal;
 
+    private float cayoteTime = 0.2f;
+    private float cayoteTimeCounter;
+
+    private float jumpBufferTime = 0.2f;
+    private float jumpBufferCounter;
+
+
     public DiedScript ds;
 
     private void Awake() {
@@ -27,9 +34,37 @@ public class PlayerMovement : MonoBehaviour {
         rb = GetComponent<Rigidbody>(); 
     }  
 
-    void Update() {                                                     // Jump
-        if(Input.GetKeyDown(KeyCode.Space) && rb.velocity.y == 0) {
+    void Update() {                   
+        if (rb.velocity.y <= 0 && rb.velocity.y >= -0.001)
+        {
+            cayoteTimeCounter = cayoteTime;
+        }
+        else
+        {
+            cayoteTimeCounter -= Time.deltaTime;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            jumpBufferCounter = jumpBufferTime;
+        }
+        else
+        {
+            jumpBufferCounter -= Time.deltaTime;
+        }
+                                             
+        if (jumpBufferCounter > 0f && cayoteTimeCounter > 0f) 
+        {
             rb.AddForce(Vector3.up * jumpHeight, ForceMode.Impulse);
+
+            jumpBufferCounter = 0f;
+        }                                  // Jump
+        
+        if(Input.GetKeyUp(KeyCode.Space) && rb.velocity.y > 0f)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+
+            cayoteTimeCounter = 0f;
         }
 
         if(ds.canMove == false)
