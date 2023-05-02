@@ -101,6 +101,7 @@ MonoBehaviour:
   clampAngle: 20
   target: {fileID: 4035747990713087953}
   targetDistance: 0
+  ds: {fileID: 0}
 --- !u!1 &4035747990713087963
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,7 +117,7 @@ GameObject:
   - component: {fileID: 4035747990713087957}
   - component: {fileID: 4035747990713087954}
   - component: {fileID: 4035747990713087955}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,6 +239,7 @@ MonoBehaviour:
   jumpHeight: 15
   gravityScale: 10
   fallingGravityScale: 40
+  ds: {fileID: 0}
 --- !u!114 &4035747990713087955
 MonoBehaviour:
   m_ObjectHideFlags: 0

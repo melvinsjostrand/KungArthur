@@ -144,8 +144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d127553811c9ffa478031a1958c73a3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 0}
-  player: {fileID: 0}
+  agent: {fileID: -3301097788631727889}
+  player: {fileID: 4035747990713087953, guid: 05ba1ccd57a69024b91465be1283af8b, type: 3}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 183
@@ -155,7 +155,7 @@ MonoBehaviour:
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 0
   timeBetweenAttack: 1
-  projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: 8201331136846968097, guid: 1632d89e12ee3ac4a8f66486c4bbca7c, type: 3}
   projectileSpeed: 10
   sightRange: 10
   attackRange: 10
