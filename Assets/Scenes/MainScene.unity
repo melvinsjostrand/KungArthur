@@ -2964,7 +2964,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 756870515}
         m_TargetAssemblyTypeName: Quest1, Assembly-CSharp
         m_MethodName: ActivateQuest
         m_Mode: 1
@@ -6984,7 +6984,7 @@ MonoBehaviour:
   - Would you be so kind as to do them?
   textSpeed: 0.05
   IsActive: 0
-  QuestMenu: {fileID: 0}
+  QuestMenu: {fileID: 1461899604}
   index: 0
 --- !u!114 &893885787
 MonoBehaviour:
@@ -10069,7 +10069,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 756870514}
         m_TargetAssemblyTypeName: Quest2, Assembly-CSharp
         m_MethodName: ActivateQuest
         m_Mode: 1
@@ -11358,7 +11358,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 756870513}
         m_TargetAssemblyTypeName: Quest3, Assembly-CSharp
         m_MethodName: ActivateQuest
         m_Mode: 1
@@ -16580,7 +16580,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2065833253}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 62, y: 46, z: 202.3}
+  m_LocalPosition: {x: 75.11, y: 46, z: 215.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

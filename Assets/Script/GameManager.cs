@@ -27,8 +27,9 @@ public class GameManager : MonoBehaviour
             if(coin == null){ //skapar en coin i en slumpmässig position
                 coin = Instantiate(coinPrefab);
                 Vector3 position = Vector3.one;
-                position.x = Random.Range(-13f, 13f);
-                position.z = Random.Range(-13f, 13f);
+                position.x = Random.Range(49f, 75f);
+                position.z = Random.Range(192f, 215f);
+                position.z = 46f;
                 coin.transform.position = position;
             }
         }
