@@ -21,6 +21,7 @@ public class Trigger : MonoBehaviour
                 DS.gameObject.SetActive(true);
                 DS.Active();
                 npcText.gameObject.SetActive(false);
+
         }
     }
     void OnTriggerEnter(Collider other) {
@@ -28,6 +29,7 @@ public class Trigger : MonoBehaviour
             istriggeringnpc = true;
             triggeringNPC = other.gameObject;
             npcText.gameObject.SetActive(true);
+                Cursor.visible = true;
         }
         if(other.tag == "Coin"){
             Quest1.Points();

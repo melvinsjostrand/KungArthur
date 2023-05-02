@@ -2180,15 +2180,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4035747990713087953, guid: 05ba1ccd57a69024b91465be1283af8b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 453.28
+      value: 729.87
       objectReference: {fileID: 0}
     - target: {fileID: 4035747990713087953, guid: 05ba1ccd57a69024b91465be1283af8b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 81.73
+      value: 48.69
       objectReference: {fileID: 0}
     - target: {fileID: 4035747990713087953, guid: 05ba1ccd57a69024b91465be1283af8b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 305.21
+      value: 94.53
       objectReference: {fileID: 0}
     - target: {fileID: 4035747990713087953, guid: 05ba1ccd57a69024b91465be1283af8b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16737,7 +16737,7 @@ BoxCollider:
   m_Center: {x: -0.00000023841858, y: 0, z: 0}
 --- !u!95 &2085714114
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -16754,7 +16754,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!65 &2085714115
 BoxCollider:
   m_ObjectHideFlags: 0
