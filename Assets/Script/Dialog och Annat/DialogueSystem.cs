@@ -43,6 +43,7 @@ public class DialogueSystem : MonoBehaviour
             QuestMenu.SetActive(true);
             gameObject.SetActive(false);
             Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
     public void Active(){

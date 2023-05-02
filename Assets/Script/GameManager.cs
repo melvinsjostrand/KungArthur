@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
                 Vector3 position = Vector3.one;
                 position.x = Random.Range(49f, 75f);
                 position.z = Random.Range(192f, 215f);
-                position.z = 46f;
+                position.y = 46f;
                 coin.transform.position = position;
             }
         }
@@ -40,8 +40,9 @@ public class GameManager : MonoBehaviour
                 {
                 enemy = Instantiate(enemyPrefab);
                 Vector3 position = Vector3.one;
-                position.x = Random.Range(-13f, 13f);
-                position.z = Random.Range(-13f, 13f);
+                position.x = Random.Range(839f, 863f);
+                position.z = Random.Range(184f, 205f);
+                position.y = 63f;
                 enemy.transform.position = position;
                 i++;
                 }
