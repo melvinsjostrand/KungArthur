@@ -157,7 +157,7 @@ MonoBehaviour:
   timeBetweenAttack: 1
   projectilePrefab: {fileID: 8201331136846968097, guid: 1632d89e12ee3ac4a8f66486c4bbca7c, type: 3}
   projectileSpeed: 10
-  sightRange: 10
+  sightRange: 20
   attackRange: 10
   playerInSightRange: 0
   playerInAttackRange: 0
