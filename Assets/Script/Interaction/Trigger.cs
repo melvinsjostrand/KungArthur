@@ -10,6 +10,7 @@ public class Trigger : MonoBehaviour
     private bool istriggeringnpc; //npc
     public TMP_Text npcText;
     public GameObject QuestMenu;
+    public GameObject mc;
     public DialogueSystem DS;
     public bool DActive; //kollar om player pratar med npc och sätter denna true så att dialogsystemet kan funka
     void Start(){
@@ -46,5 +47,6 @@ public class Trigger : MonoBehaviour
         QuestMenu.SetActive(false);
         istriggeringnpc = false;
         triggeringNPC = null;
+        mc.GetComponent<CameraController>().enabled = true;
     }
 }

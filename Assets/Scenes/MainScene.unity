@@ -2174,12 +2174,17 @@ PrefabInstance:
       propertyPath: ds
       value: 
       objectReference: {fileID: 509787157}
+    - target: {fileID: 4035747989784809881, guid: 05ba1ccd57a69024b91465be1283af8b, type: 3}
+      propertyPath: QuestMenu
+      value: 
+      objectReference: {fileID: 1461899604}
     - target: {fileID: 4035747990713087953, guid: 05ba1ccd57a69024b91465be1283af8b, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4035747990713087953, guid: 05ba1ccd57a69024b91465be1283af8b, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: 259
       objectReference: {fileID: 0}
     - target: {fileID: 4035747990713087953, guid: 05ba1ccd57a69024b91465be1283af8b, type: 3}
@@ -2189,6 +2194,17 @@ PrefabInstance:
     - target: {fileID: 4035747990713087953, guid: 05ba1ccd57a69024b91465be1283af8b, type: 3}
       propertyPath: m_LocalPosition.z
       value: 206
+=======
+      value: 453.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4035747990713087953, guid: 05ba1ccd57a69024b91465be1283af8b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 81.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 4035747990713087953, guid: 05ba1ccd57a69024b91465be1283af8b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 305.21
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 4035747990713087953, guid: 05ba1ccd57a69024b91465be1283af8b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4311,6 +4327,7 @@ MonoBehaviour:
   canMove: 0
   player: {fileID: 661122782}
   mc: {fileID: 1163873307}
+  QuestMenu: {fileID: 1461899604}
 --- !u!1 &514462183
 GameObject:
   m_ObjectHideFlags: 0
@@ -5922,6 +5939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcText: {fileID: 2000646790}
   QuestMenu: {fileID: 1461899604}
+  mc: {fileID: 1163873307}
   DS: {fileID: 893885786}
   DActive: 0
 --- !u!1 &661382706

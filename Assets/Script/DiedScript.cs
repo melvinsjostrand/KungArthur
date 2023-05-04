@@ -15,6 +15,7 @@ public class DiedScript : MonoBehaviour
     public bool canMove;
     public GameObject player;
     public GameObject mc;
+    public GameObject QuestMenu;
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +31,7 @@ public class DiedScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(hp.alive == false)
+        if(!hp.alive)
         {
             causeOfDeathText.text = hp.causeOfDeath;
             darkScreen.SetActive(true);
@@ -41,12 +42,25 @@ public class DiedScript : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             GameObject.FindWithTag("GameMusic").GetComponent<AudioSource>().Pause();
         }
+        else if(hp.alive && QuestMenu.activeInHierarchy == false)
+        {
+            darkScreen.SetActive(false);
+            canMove = true;
+            causeOfDeathText.gameObject.SetActive(false);
+            respawnButton.SetActive(false);
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            GameObject.FindWithTag("GameMusic").GetComponent<AudioSource>().UnPause();
+            
+        }
         else
         {
             darkScreen.SetActive(false);
             canMove = true;
             causeOfDeathText.gameObject.SetActive(false);
             respawnButton.SetActive(false);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
             GameObject.FindWithTag("GameMusic").GetComponent<AudioSource>().UnPause();
         }
     }
@@ -60,7 +74,5 @@ public class DiedScript : MonoBehaviour
         player.transform.position = spawnPoint.position;
         player.GetComponent<PlayerMovement>().enabled = true;
         mc.GetComponent<CameraController>().enabled = true;
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
     }
 }

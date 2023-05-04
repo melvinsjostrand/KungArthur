@@ -16,6 +16,7 @@ public class CameraController : MonoBehaviour {
 
     public float targetDistance = 2.5f;
     public DiedScript ds;
+    public GameObject QuestMenu;
 
     void Start () {
         Vector3 rot = transform.localRotation.eulerAngles;
@@ -41,7 +42,7 @@ public class CameraController : MonoBehaviour {
         Quaternion localRotation = Quaternion.Euler(x: xAxisRot, y: yAxisRot, z: 0.0f);
         transform.rotation = localRotation;
 
-        if(ds.canMove == false)
+        if(ds.canMove == false || QuestMenu.activeInHierarchy == true)
         {
             this.GetComponent<CameraController>().enabled = false;
         }
