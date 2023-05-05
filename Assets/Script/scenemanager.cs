@@ -10,13 +10,9 @@ public class scenemanager : MonoBehaviour
     public void LoadScene()
     {
         SceneManager.LoadScene(sceneIndex);
-        
     }
     void doExitGame() 
     {
          Application.Quit();
     }
-
-
 }
-

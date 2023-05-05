@@ -51,7 +51,6 @@ public class DiedScript : MonoBehaviour
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
             GameObject.FindWithTag("GameMusic").GetComponent<AudioSource>().UnPause();
-            
         }
         else
         {
