@@ -18,4 +18,15 @@ public class Projectile : MonoBehaviour
         // Destroy the projectile on collision with another object
         Destroy(gameObject);
     }
+     private void OnTriggerEnter(Collider other) {
+        if(other.CompareTag("Player"))
+        {
+            HP hp = other.GetComponent<HP>();
+            if (hp != null)
+            {
+                hp.TakeDamage(10);
+            }
+            Destroy(gameObject);
+        }
+    }
 }
